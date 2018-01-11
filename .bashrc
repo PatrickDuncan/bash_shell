@@ -1,3 +1,6 @@
+# Ignores duplicates in bash history (extend the life of your up arrow)
+export HISTCONTROL=ignoreboth:erasedups
+
 # VISUAL
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -18,3 +21,4 @@ alias gm='git commit -m'
 alias gc='git checkout'
 alias ga='git add'
 alias gb='git branch'
+alias gp='git push'
