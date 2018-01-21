@@ -1,7 +1,9 @@
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Ignores duplicates in bash history (extend the life of your up arrow)
 export HISTCONTROL=ignoreboth:erasedups
 
-# VISUAL
+# Visual
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
@@ -9,7 +11,7 @@ export PS1="\[\033[1;33m\]\W\[\033[1;36m\]\$(parse_git_branch)\[\033[1;33m\]$\[\
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 
-# ALIASES
+# Aliases
 alias git='/usr/local/git/bin/git'
 alias profile='vim ~/.bash_profile'
 alias ls='ls -GFha'
@@ -21,4 +23,9 @@ alias gm='git commit -m'
 alias gc='git checkout'
 alias ga='git add'
 alias gb='git branch'
-alias gp='git push'
+alias gp='git pull'
+
+# Git Completion
+if [ -f $SCRIPT_DIR/.git-completion.bash ]; then
+  . $SCRIPT_DIR/.git-completion.bash
+fi
