@@ -1,0 +1,2 @@
+__git_complete gc _git_checkout
+__git_complete gd _git_diff

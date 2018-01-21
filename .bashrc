@@ -12,20 +12,16 @@ export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 
 # Aliases
-alias git='/usr/local/git/bin/git'
-alias profile='vim ~/.bash_profile'
-alias ls='ls -GFha'
-alias gl='git log'
-alias gs='git status'
-alias gv='git remote -v'
-alias gd='git diff'
-alias gm='git commit -m'
-alias gc='git checkout'
-alias ga='git add'
-alias gb='git branch'
-alias gp='git pull'
+if [ -f $SCRIPT_DIR/.aliases ]; then
+  source $SCRIPT_DIR/.aliases
+fi
 
 # Git Completion
 if [ -f $SCRIPT_DIR/.git-completion.bash ]; then
   . $SCRIPT_DIR/.git-completion.bash
+fi
+
+# Make Git Completion work for certain aliases
+if [ -f $SCRIPT_DIR/.alias-git-completion ]; then
+  source $SCRIPT_DIR/.alias-git-completion
 fi
