@@ -21,7 +21,7 @@ fi
 
 # Aliases
 if [ -f $SCRIPT_DIR/.aliases ]; then
-  source $SCRIPT_DIR/.aliases
+  . $SCRIPT_DIR/.aliases
 fi
 
 # Git Completion
@@ -31,5 +31,5 @@ fi
 
 # Make Git Completion work for certain aliases
 if [ -f $SCRIPT_DIR/.alias-git-completion ]; then
-  source $SCRIPT_DIR/.alias-git-completion
+  . $SCRIPT_DIR/.alias-git-completion
 fi
