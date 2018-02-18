@@ -3,8 +3,9 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Ignores duplicates in bash history (extend the life of your up arrow)
 export HISTCONTROL=ignoreboth:erasedups
 
-# Stops autocompleting files when using cd
+# Stops autocompleting files when using cd and rmdir
 complete -d cd
+complete -d rmdir
 
 # Prompt
 parse_git_branch() {
