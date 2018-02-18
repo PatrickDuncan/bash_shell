@@ -1,3 +1,3 @@
 syntax on
 
-colorscheme slate
+colorscheme default
