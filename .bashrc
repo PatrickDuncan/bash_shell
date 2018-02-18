@@ -15,22 +15,5 @@ export PS1="\[\033[1;33m\]\W\[\033[1;36m\]\$(parse_git_branch)\[\033[1;33m\]$\[\
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
 
-# Vim syntax coloring
-if [ -f $SCRIPT_DIR/.vimrc ] && [ ! -f ~/.vimrc ]; then
-  ln -s $SCRIPT_DIR/.vimrc ~/.vimrc
-fi
-
-# Aliases
-if [ -f $SCRIPT_DIR/.aliases ]; then
-  . $SCRIPT_DIR/.aliases
-fi
-
-# Git Completion
-if [ -f $SCRIPT_DIR/.git-completion.bash ]; then
-  . $SCRIPT_DIR/.git-completion.bash
-fi
-
-# Make Git Completion work for certain aliases
-if [ -f $SCRIPT_DIR/.alias-git-completion ]; then
-  . $SCRIPT_DIR/.alias-git-completion
-fi
+# Include the files in this repository
+. $SCRIPT_DIR/.include_files
