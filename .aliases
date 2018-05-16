@@ -1,3 +1,4 @@
+alias atom='open -a 'Atom' .'
 alias ga='git add'
 alias gb='git branch'
 alias gbase='git rebase'
