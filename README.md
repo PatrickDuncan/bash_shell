@@ -8,3 +8,6 @@ fi
 ```
 ### Credits
 * [Git Completion](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash)
+
+#### Disclaimer
+* This bash profile was created for macOS. Most of the commands/options should work with other implementations of shell.
