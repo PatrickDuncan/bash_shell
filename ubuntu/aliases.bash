@@ -1,0 +1,1 @@
+alias profile='vim ~/.bashrc'
