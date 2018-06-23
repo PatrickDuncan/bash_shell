@@ -1,6 +1,3 @@
-# A
-alias atom='open -a 'Atom' .'
-
 # G
 alias ga='git add'
 alias gb='git branch'
