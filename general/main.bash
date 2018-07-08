@@ -13,6 +13,12 @@ then
   ln -s "${GENERAL}/vimrc" ~/.vimrc
 fi
 
+# Improved git diff
+if [ -f "${GENERAL}/diff-so-fancy" ]; then
+  PATH="${GENERAL}":$PATH
+  git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+fi
+
 # Aliases
 if [ -f "${GENERAL}/aliases.bash" ]; then
   . "${GENERAL}/aliases.bash"

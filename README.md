@@ -25,4 +25,5 @@ fi
 
 ### Credits
 
+* [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 * [Git Completion](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash)
