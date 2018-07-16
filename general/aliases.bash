@@ -1,3 +1,5 @@
+LOG="git log --graph --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ar%C(reset)%C(reset)%C(bold yellow)%d%C(reset)%n''              %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
+
 # G
 alias ga='git add'
 alias gb='git branch'
@@ -7,9 +9,9 @@ alias gclone='git clone'
 alias gd='git diff'
 alias gdd='git describe'
 alias gf='git fetch'
-alias gl="git log --graph --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ar%C(reset)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all -n 3"
-alias gll="git log --graph --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ar%C(reset)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
-alias glll='git log'
+alias gl="${LOG} -3"
+alias gll="${LOG}"
+alias glll="${LOG} --all"
 alias gm='git commit -m'
 alias gmend='git commit --amend'
 alias gmerge='git merge'
