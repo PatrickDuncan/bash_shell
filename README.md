@@ -11,17 +11,14 @@ Look no further!
 * You shell must be `bash`
 * `git` must be installed
 
-### Usage
-
-Add this to the bottom of your `.bash_profile` or `.bashrc`:
+### Installation
 
 ```bash
-if [ -f <PATH_TO_THIS_REPO>/main.bash ]; then
-    . <PATH_TO_THIS_REPO>/main.bash [OPERATING_SYSTEM]
-fi
+./quick-install.bash [OPERATING_SYSTEM]
 ```
-  - *[OPERATING_SYSTEM] is optional, you will only get `general` if you omit it*
-  - *[OPERATING_SYSTEM] must be one of the folders in this repo (other than `general`)*
+
+* *[OPERATING_SYSTEM] is optional, you will only get `general` if you omit it*
+* *[OPERATING_SYSTEM] must be one of the folders in this repo (other than `general`)*
 
 ### Credits
 
