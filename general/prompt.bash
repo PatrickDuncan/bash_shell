@@ -1,9 +1,10 @@
 # Ignores duplicates in bash history (extend the life of your up arrow)
 export HISTCONTROL=ignoreboth:erasedups
 
-# Stops autocompleting files when using cd and rmdir
+# Stops autocompleting incompatible types
 complete -d cd
 complete -d rmdir
+complete -f cat
 
 # Prompt visuals
 BRANCH() { # Get current git branch
