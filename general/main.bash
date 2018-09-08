@@ -6,11 +6,11 @@ if [ -f "${GENERAL}/prompt.bash" ]; then
 fi
 
 # Vim syntax coloring
-if [ -f "${GENERAL}/vimrc" ] &&
+if [ -f "${GENERAL}/basic.vim" ] &&
    [ ! -f ~/.vimrc ] &&
    [ ! -L ~/.vimrc ]
 then
-  ln -s "${GENERAL}/vimrc" ~/.vimrc
+  ln -s "${GENERAL}/basic.vim" ~/.vimrc
 fi
 
 # Improved git diff

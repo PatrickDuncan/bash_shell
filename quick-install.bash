@@ -9,6 +9,7 @@ else
   login_script="${HOME}/.bash_profile"
 fi
 
+echo                                                                   >> ${login_script}
 echo "# PatrickDuncan's bash shell"                                    >> ${login_script}
 echo "[ -f ${REPO_PATH}/main.bash ] && . ${REPO_PATH}/main.bash ${OS}" >> ${login_script}
 

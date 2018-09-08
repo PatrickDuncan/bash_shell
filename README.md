@@ -24,3 +24,9 @@ Look no further!
 
 * [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 * [Git Completion](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash)
+* [Vimrc (basic)](https://raw.githubusercontent.com/amix/vimrc/master/vimrcs/basic.vim)
+
+### Tips
+
+* You will not gain vim customizations if you already have `~/.vimrc`
+* `~/.vimrc` will be created
