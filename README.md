@@ -20,13 +20,19 @@ Look no further!
 * *[OPERATING_SYSTEM] is optional, you will only get `general` if you omit it*
 * *[OPERATING_SYSTEM] must be one of the folders in this repo (other than `general`)*
 
+### Tips
+
+* You will not gain vim customizations if you already have `~/.vimrc`
+* `~/.vimrc` will be created
+
 ### Credits
 
 * [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 * [Git Completion](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash)
 * [Vimrc (basic)](https://raw.githubusercontent.com/amix/vimrc/master/vimrcs/basic.vim)
 
-### Tips
+#### Linting
 
-* You will not gain vim customizations if you already have `~/.vimrc`
-* `~/.vimrc` will be created
+```
+docker run -e SHELLCHECK_OPTS="-e SC1091 -e SC1090" -v "$PWD:/mnt" koalaman/shellcheck <Path_To_File>
+```

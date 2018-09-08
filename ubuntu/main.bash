@@ -1,3 +1,5 @@
+#!/bin/bash
+
 UBUNTU="${REPO_PATH}/ubuntu"
 
 # Aliases
