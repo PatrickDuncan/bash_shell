@@ -1,5 +1,7 @@
 ## Bash Shell Customizations
 
+[![Build Status](https://travis-ci.org/PatrickDuncan/bash_shell.svg?branch=master)](https://travis-ci.org/PatrickDuncan/bash_shell)
+
 Tired of typing out commonly used commands like `git status`?
 
 Tired of your shell not doing basic things like removing duplicates from your history?
