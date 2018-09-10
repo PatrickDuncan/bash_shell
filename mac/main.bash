@@ -1,3 +1,5 @@
+#!/bin/bash
+
 MAC="${REPO_PATH}/mac"
 
 # Aliases

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 GENERAL="${REPO_PATH}/general"
 
 # Prompt improvements

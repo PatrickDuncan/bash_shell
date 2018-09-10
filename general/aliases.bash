@@ -1,3 +1,6 @@
+#!/bin/bash
+# shellcheck disable=SC2139
+
 LOG="git log --graph --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%ar%C(reset)%C(reset)%C(bold yellow)%d%C(reset)%n''              %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'"
 
 # G

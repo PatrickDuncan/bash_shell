@@ -1,1 +1,1 @@
-WINDOWS="${REPO_PATH}/windows"
+#!/bin/bash

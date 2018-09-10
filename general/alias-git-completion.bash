@@ -1,3 +1,5 @@
+#!/bin/bash
+
 __git_complete ga      _git_add
 __git_complete gb      _git_branch
 __git_complete gc      _git_checkout
