@@ -1,6 +1,6 @@
 ## Bash Shell Customizations
 
-[![Build Status](https://travis-ci.org/PatrickDuncan/bash_shell.svg?branch=master)](https://travis-ci.org/PatrickDuncan/bash_shell)
+[![Build Status](https://travis-ci.org/PatrickDuncan/bash_shell.svg?branch=master)](https://travis-ci.org/PatrickDuncan/bash_shell) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Tired of typing out commonly used commands like `git status`?
 
