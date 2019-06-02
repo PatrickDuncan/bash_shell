@@ -8,3 +8,6 @@ alias ip="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0
 
 # L
 alias ll='ls -GFhAlT'
+
+# V
+alias vscode="open -a 'Visual Studio Code' ."
