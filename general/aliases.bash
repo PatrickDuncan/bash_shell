@@ -7,11 +7,13 @@ LOG="git log --graph --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(b
 alias ..='cd ..'
 
 # D
+alias db='docker build'
 alias dc='docker container'
 alias dcl='docker container list -a'
 alias dcp='docker container prune'
 alias di='docker image'
 alias dil='docker image list'
+alias dps='docker ps'
 
 # G
 alias ga='git add'
