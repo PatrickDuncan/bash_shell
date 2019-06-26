@@ -13,7 +13,9 @@ alias dcl='docker container list -a'
 alias dcp='docker container prune'
 alias di='docker image'
 alias dil='docker image list'
+alias dp='docker pull'
 alias dps='docker ps'
+alias dr='docker run'
 
 # G
 alias ga='git add'
