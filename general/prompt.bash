@@ -12,7 +12,12 @@ BRANCH() { # Get current git branch
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 FOLDER_COLOR() { # Change the folder and $ colour depending on the weekday
-  echo $(($(date +%u) - 1))
+  WEEKDAY=$(date +%u)
+  if [ "${WEEKDAY}" -lt 3 ]; then # Mon, Tues
+    echo 1
+  else
+    echo "$((WEEKDAY - 1))"
+  fi
 }
 export PS1="\[\033[1;3\$(FOLDER_COLOR)m\]\W\[\033[1;36m\]\$(BRANCH)\[\033[1;3\$(FOLDER_COLOR)m\]$\[\033[m\] "
 export CLICOLOR=1
