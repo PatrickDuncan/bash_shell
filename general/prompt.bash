@@ -19,6 +19,14 @@ FOLDER_COLOR() { # Change the folder and $ colour depending on the weekday
     echo "$((WEEKDAY - 1))"
   fi
 }
-export PS1="\[\033[1;3\$(FOLDER_COLOR)m\]\W\[\033[1;36m\]\$(BRANCH)\[\033[1;3\$(FOLDER_COLOR)m\]$\[\033[m\] "
+CHECKMARK() {
+  if [ $? = 0 ]; then
+    echo '✔'
+  else
+    echo '✘'
+  fi
+}
+
+export PS1="\$(CHECKMARK)\[\033[1;3\$(FOLDER_COLOR)m\]\W\[\033[1;36m\]\$(BRANCH)\[\033[1;3\$(FOLDER_COLOR)m\]$\[\033[m\] "
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
