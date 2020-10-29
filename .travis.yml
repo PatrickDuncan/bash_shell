@@ -1,5 +1,5 @@
 install:
-  - export SHELLCHECK_OPTS="-e SC1091 -e SC1090"
+  - export SHELLCHECK_OPTS="-e SC1091 -e SC1090 -e SC2181"
 
 script:
   - shellcheck *.bash
