@@ -35,3 +35,8 @@ fi
 if [ -f "${GENERAL}/alias-git-completion.bash" ]; then
   . "${GENERAL}/alias-git-completion.bash"
 fi
+
+# Misc. functions
+if [ -f "${GENERAL}/functions.bash" ]; then
+  . "${GENERAL}/functions.bash"
+fi
